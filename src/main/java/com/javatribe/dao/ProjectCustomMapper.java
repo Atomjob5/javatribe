@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.javatribe.dao;
 
 import java.util.List;
@@ -11,3 +12,18 @@ public interface ProjectCustomMapper {
 	List<ProjectCustom> findProjectList() throws Exception;
 
 }
+=======
+package com.javatribe.dao;
+
+import java.util.List;
+
+import com.javatribe.pojo.ProjectCustom;
+import com.javatribe.pojo.ProjectQueryVo;
+
+//对系统自动生成的进行扩展
+public interface ProjectCustomMapper {
+	//获得项目列表
+	List<ProjectCustom> findProjectList() throws Exception;
+
+}
+>>>>>>> 606757e18a5290dc7b1c5524ce5edd08e14e318d

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.javatribe.controller;
 
 
@@ -28,3 +29,35 @@ public class HomeController {
 		return "index";
 	}
 }
+=======
+package com.javatribe.controller;
+
+
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.javatribe.pojo.HomeCustom;
+import com.javatribe.service.HomeService;
+
+@Controller
+@RequestMapping("/index")
+public class HomeController {
+	@Resource
+	HomeService homeService;
+	  
+	//要转换成Json输出  @ResponseBody  @ResponseBody List<HomeCustom>
+	public String selectHomeInfo(Model model) throws Exception{
+		//调用homeService 来查询数据库
+		List<HomeCustom> homeList=homeService.selectHomeInfo();
+		model.addAttribute("homeList",homeList);
+		return "index";
+	}
+}
+>>>>>>> 606757e18a5290dc7b1c5524ce5edd08e14e318d

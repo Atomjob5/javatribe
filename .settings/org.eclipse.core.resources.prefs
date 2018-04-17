@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
@@ -5,3 +6,8 @@ encoding//src/main/webapp/WEB-INF/jsp/Activity/activity.jsp=UTF-8
 encoding//src/main/webapp/index.jsp=UTF-8
 encoding//src/test/java=UTF-8
 encoding/<project>=UTF-8
+=======
+eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/jsp/Activity/activity.jsp=UTF-8
+encoding//src/main/webapp/index.jsp=UTF-8
+>>>>>>> 606757e18a5290dc7b1c5524ce5edd08e14e318d
